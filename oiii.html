@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Feliz Nosso Dia, meu amorrzinhuuuuu ❤️ 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#ffecd2;
+      --bg2:#fcb69f;
+      --card:#ffffff;
+      --accent:#ff6b81;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      background: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.15), transparent 10%), linear-gradient(135deg,var(--bg1),var(--bg2));
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#333;
+      padding:24px;
+    }
+    .card{
+      width:100%; max-width:760px; background:linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));
+      border-radius:18px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,0.12); position:relative; overflow:hidden;
+      backdrop-filter: blur(6px);
+    }
+    .top{
+      display:flex; gap:18px; align-items:center;
+    }
+    .photo{
+      width:96px; height:96px; border-radius:50%; background:linear-gradient(135deg,var(--accent),#ffd1dc); display:flex; align-items:center; justify-content:center; font-size:36px; color:white; font-weight:600; box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      flex-shrink:0;
+    }
+    h1{margin:0; font-family:'Great Vibes', cursive; font-size:42px; color:#aa2b6f;}
+    p.lead{margin:8px 0 0 0; font-size:15px; color:#5b4b52}.message{
+  margin-top:18px; background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.9)); padding:18px; border-radius:12px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  font-size:16px; line-height:1.45;
+}
+.message .typed{font-weight:600; color: var(--accent);}
+
+.meta{display:flex; gap:12px; margin-top:14px; align-items:center}
+.date-badge{padding:8px 12px; border-radius:999px; background:var(--glass); font-size:13px}
+
+.actions{display:flex; gap:10px; margin-top:18px}
+button{border:0; padding:10px 14px; border-radius:10px; cursor:pointer; font-weight:600}
+.btn-send{background:linear-gradient(90deg,var(--accent),#ff9bb3); color:white}
+.btn-copy{background:transparent; border:1px solid rgba(0,0,0,0.08)}
+
+/* little hearts floating */
+.heart{position:absolute; width:18px; height:18px; transform:rotate(-45deg); left:50%; top:50%; opacity:0.9}
+.heart:before,.heart:after{content:''; position:absolute; width:18px; height:18px; background:var(--accent); border-radius:50%}
+.heart:before{top:-9px; left:0}
+.heart:after{left:9px; top:0}
+@keyframes floatUp {0%{transform:translateY(0) scale(1) rotate(-45deg); opacity:1}100%{transform:translateY(-260px) scale(0.7) rotate(-45deg); opacity:0}}
+.heart.h1{left:10%; top:80%; animation: floatUp 5s linear infinite; animation-delay:0s}
+.heart.h2{left:30%; top:90%; animation: floatUp 6s linear infinite; animation-delay:1s}
+.heart.h3{left:70%; top:85%; animation: floatUp 5.5s linear infinite; animation-delay:.8s}
+.heart.h4{left:85%; top:78%; animation: floatUp 7s linear infinite; animation-delay:2s}
+
+/* responsive */
+@media (max-width:520px){
+  h1{font-size:36px}
+  .top{flex-direction:row}
+}
+
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="top">
+      <div class="photo">💞</div>
+      <div>
+        <h1>Feliz Nosso Dia 14</h1>
+        <p class="lead">Hoje é o dia que eu guardo com muiiito carinho só pra você, meu amorrzinhuuuuu👉👈.</p>
+      </div>
+    </div><div class="message" aria-live="polite">
+  <div id="typed" class="typed">Eu te amo, meu amorrzinhuuuuu ❤️.</div>
+  <div style="margin-top:8px" id="moreText">Hoje é o nosso dia, e eu só queria te lembrar de uma coisa bem simples:
+eu sou muito feliz por ter você. Feliz por cada conversa boba, cada risada do nada, cada gesto seu que me desmonta sem esforço nenhum.
+Você é a paz da minha vida, o carinho que acalma, e a pessoa que eu agradeço todos os dias por existir na minha vida.💖</div>
+</div>
+
+<div class="meta">
+  <div class="date-badge" id="today"></div>
+  <div style="font-size:13px;color:#7b6b73">quero te amar por completo.</div>
+</div>
+
+
+<div aria-hidden="true">
+  <div class="heart h1"></div>
+  <div class="heart h2"></div>
+  <div class="heart h3"></div>
+  <div class="heart h4"></div>
+</div>
+
+  </div>  <script>
+    // preencher a data
+    const today = new Date();
+    const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('today').textContent = today.toLocaleDateString('pt-BR', opts);
+
+    // typing effect
+    const text = 'Eu te amo meu amorzinhuuu.';
+    const more = ' Hoje é o nosso dia, e eu só queria te lembrar de uma coisa bem simples: eu sou muito feliz por ter você. Feliz por cada conversa boba, cada risada do nada, cada gesto seu que me desmonta sem esforço nenhum.
+Você é a paz que encaixa, o carinho que acalma, e a pessoa que eu agradeço todos os dias por existir na minha vida.';
+    const typedEl = document.getElementById('typed');
+    let i = 0;
+    function type(){
+      if(i < text.length){
+        typedEl.textContent += text[i];
+        i++;
+        setTimeout(type, 120);
+      } else {
+        // depois de digitar, revelar restante
+        setTimeout(()=>{
+          document.getElementById('moreText').style.transition = 'opacity 400ms';
+          document.getElementById('moreText').style.opacity = 0;
+          setTimeout(()=>{document.getElementById('moreText').style.opacity = 1}, 50);
+        }, 400);
+      }
+    }
+    // começar sem texto e iniciar digitação
+    typedEl.textContent = '';
+    setTimeout(type, 500);
+
+    // botão copiar
+    document.getElementById('copyBtn').addEventListener('click', async ()=>{
+      const texto = 'Feliz dia nosso!\n\nEu te amo. ' + more.trim() + '\n\n- Com todo meu carinho ❤️';
+      try{
+        await navigator.clipboard.writeText(texto);
+        alert('Texto copiado! Agora é só colar no WhatsApp 💌');
+      }catch(e){
+        alert('Não consegui copiar automaticamente. Selecione o texto e copie manualmente.');
+      }
+    });
+    document.getElementById('openFull').addEventListener('click', ()=>{
+      const full = 'Feliz dia nosso!\n\nEu te amo. ' + more.trim() + '\n\nQuero te abraçar agora e prometer mais dias juntos. - Com todo meu carinho ❤️';
+      // simples prompt para facilitar copiar/compartilhar
+      window.alert(full);
+    });
+  </script></body>
+</html>
